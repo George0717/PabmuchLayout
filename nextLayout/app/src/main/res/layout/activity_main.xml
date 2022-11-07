@@ -6,13 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bnv_musik_kita"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     app:menu="@menu/menu_bottom_navigation"
     />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bnv_musik_kita"
+        android:background="@drawable/comp"
+        />
 
 
 </RelativeLayout>
